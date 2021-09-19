@@ -9,6 +9,12 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "paths": {
+      "minimalistic-ui-kit-for-angular": [
+        "dist/minimalistic-ui-kit-for-angular/minimalistic-ui-kit-for-angular",
+        "dist/minimalistic-ui-kit-for-angular"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
