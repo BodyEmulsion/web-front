@@ -1,3 +1,6 @@
 [submodule "minimalistic-ui-kit-for-angular"]
 	path = projects/minimalistic-ui-kit-for-angular
 	url = https://github.com/BodyEmulsion/minimalistic-ui-kit-for-angular.git
+[submodule "projects/minimalistic-ui-kit-for-angular"]
+	path = projects/minimalistic-ui-kit-for-angular
+	url = https://github.com/BodyEmulsion/minimalistic-ui-kit-for-angular.git
