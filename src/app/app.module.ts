@@ -11,7 +11,7 @@ import {MinimalisticUiKitForAngularModule} from "../../projects/minimalistic-ui-
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MinimalisticUiKitForAngularModule
+    MinimalisticUiKitForAngularModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
