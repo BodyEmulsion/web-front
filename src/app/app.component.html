@@ -1,3 +1,20 @@
-<button min-button>
-  Fishing
-</button>
+<div class="root">
+  <div class="header">
+    <a class="logo" routerLink="/">
+      Проектик
+    </a>
+    <ul class="nav">
+      <li class="nav-elem">
+        <a min-button flat routerLink="/register" *ngIf = "!(authInfo$ | async)?.id">Зарегистрироваться</a>
+        <a min-button flat routerLink="/login" *ngIf = "!(authInfo$ | async)?.id">Войти</a>
+        <div class="username" *ngIf = "(authInfo$ | async)?.id">{{(authInfo$ | async)?.username}}</div>
+        <button min-button (click)="logout()" *ngIf = "(authInfo$ | async)?.id">Выйти</button>
+      </li>
+    </ul>
+  </div>
+  <div class="content-wrap">
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
